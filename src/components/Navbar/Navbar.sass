@@ -1,0 +1,45 @@
+@import '../../App.sass'
+
+.nav
+  width: 100%
+  background: $mainBackground
+  .navItem
+    width: 80vw
+    margin: 0 auto
+    padding: 2rem 0
+    display: grid
+    grid-template-columns: 25% 30%
+    align-items: center
+    justify-content: space-between
+    font-size: 1.2rem
+    .item
+      display: flex
+      justify-content: space-between
+    .item:last-child
+      padding: 0.5rem 0.8rem
+      background: $mainGrey
+      border-radius: 1.2rem
+      display: flex
+      justify-content: space-between
+
+@media screen and (min-width: 768px)
+  .nav
+    .navItem
+      padding: 2rem 0
+      grid-template-columns: 25% 24%
+      font-size: 1.2rem
+      .item:last-child
+        padding: 0.5rem 0.8rem
+        background: $mainGrey
+        border-radius: 1.2rem
+
+@media screen and (min-width: 992px)
+  .nav
+    .navItem
+      padding: 2rem 0
+      grid-template-columns: 25% 20%
+      font-size: 1.2rem
+      .item:last-child
+        padding: 0.5rem 0.8rem
+        border-radius: 1.2rem
+        justify-content: space-around

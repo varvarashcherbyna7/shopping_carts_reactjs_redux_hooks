@@ -1,0 +1,253 @@
+@import '../../App'
+
+.containerProducts
+  margin: 4rem 0.5rem
+  display: grid
+  grid-template-columns: repeat(1, 1fr)
+  grid-gap: 0.5rem
+  justify-content: space-between
+
+  .containerProduct
+    width: 85vw
+    margin: 0 auto
+    background: $mainBackground
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    padding: 1.8rem 1.6rem
+    border-radius: 2rem
+
+    .product
+      display: grid
+      grid-template-columns: 15% 64% 10%
+      justify-content: space-between
+
+      .btnNew
+        background: $mainGradient
+        text-align: center
+        height: 8%
+        color: $mainWhite
+        text-transform: uppercase
+        font-size: 0.6rem
+        display: flex
+        justify-content: center
+        border-radius: 1.1rem
+
+        div
+          align-self: center
+
+      .imgContainer
+        align-self: center
+        display: inline-block
+        width: 100%
+        div
+          cursor: all-scroll
+          border-radius: 1.1rem
+          img
+            border-radius: 1.1rem
+
+      .btnIcon
+        text-align: center
+        height: 15%
+        display: flex
+        justify-content: center
+        background: $mainWhite
+        border-radius: 50%
+
+        div
+          align-self: center
+
+          img
+            width: 100%
+
+    .descriptionContainer
+      color: $mainBlack
+      padding-top: 20px
+
+      h2
+        text-align: center
+        padding-bottom: 10px
+
+      p
+        text-align: justify
+        font-size: 16px
+
+    .priceColorContainer
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding-top: 20px
+      padding-bottom: 20px
+
+      .colorContainer
+        width: 14rem
+        padding-top: 0.5rem
+        padding-bottom: 0.5rem
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: relative
+        background: $mainWhite
+        border-radius: 1rem
+        transition: $mainTransition
+
+        .colorArrowContainer
+          h5
+            text-align: center
+            padding-left: 0.6rem
+
+          .color
+            position: absolute
+            z-index: 1
+            left: 0
+            right: 0
+            width: 100%
+            margin: 0 auto
+            height: 0
+            overflow: hidden
+            transition: $mainTransition
+
+            li
+              height: 0
+              margin: 0
+              overflow: hidden
+              background: $mainWhite
+              position: relative
+              cursor: pointer
+            //transition: $mainTransition
+            li:last-child
+              border-bottom-left-radius: 1rem
+              border-bottom-right-radius: 1rem
+
+            li div
+              position: absolute
+              z-index: 2
+              left: 0
+              width: 93%
+              margin-left: 0
+              padding-top: 0.3rem
+              padding-bottom: 0.3rem
+              padding-left: 0.5rem
+              margin-bottom: 0.3rem
+              border-bottom-right-radius: 0.5rem
+              border-top-right-radius: 0.5rem
+
+            li div:hover
+              background: $mainBackground
+              transition: $mainTransition
+
+        .arrowContainer
+          padding-right: 1rem
+          //margin-bottom: 0.4rem
+          align-self: center
+
+          .arrowDown
+            border: solid black
+            border-width: 0 3px 3px 0
+            display: inline-block
+            padding: 2px
+            transform: rotate(45deg)
+
+        &:hover
+          border-bottom-right-radius: unset
+          border-bottom-left-radius: unset
+
+        &:hover .arrowDown
+          border-width: 3px 0 0 3px
+
+        &:hover .color
+          height: 100%
+          overflow: visible
+          transition: $mainTransition
+
+        &:hover .color li
+          height: 100%
+          overflow: visible
+          font-size: 0.7rem
+          padding: 0.5rem
+          margin: 0
+
+    .capacityContainer
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+      .checkboxContainer
+        display: flex
+        justify-content: left
+        align-items: center
+        margin-bottom: 13px
+
+        label
+          position: relative
+
+          span
+            margin-left: 0.5rem
+
+        input[type='checkbox']
+          display: none
+
+        label:before
+          content: ""
+          display: inline-block
+          width: 23px
+          height: 23px
+          border: 1px solid $mainGrey
+          background: $mainGrey
+          border-radius: 5px
+          vertical-align: middle
+
+        input[type='checkbox']:checked + label span::before
+          content: ""
+          width: 17px
+          height: 17px
+          background: $mainGold
+          border-radius: 5px
+          box-shadow: $shadow
+          position: absolute
+          left: 3.5px
+          top: 3.5px
+
+    .countContainer
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-top: 30px
+
+      .countProduct
+        display: flex
+        justify-content: space-between
+        width: 92px
+        padding: 0.4rem 0.8rem
+        background: $mainGrey
+        border-radius: 1rem
+        font-size: 0.9rem
+
+        div
+          cursor: pointer
+
+      .btnBuy
+        width: 302px
+        text-align: center
+        padding: 0.4rem 0.8rem
+        border-radius: 1rem
+        color: $mainWhite
+        text-transform: uppercase
+        font-size: 0.9rem
+        background: $mainGradient
+        cursor: pointer
+
+@media screen and (min-width: 768px)
+  .containerProducts
+    grid-template-columns: repeat(2, 1fr)
+
+    .containerProduct
+      width: 40vw
+
+@media screen and (min-width: 992px)
+  .containerProducts
+    grid-template-columns: repeat(3, 1fr)
+
+    .containerProduct
+      width: 32vw
+
