@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="app">
       <Navbar/>
-      <Route exact path="/" render={() => <Products/>}/>
-      <Route exact path="/cart" render={() => <Carts/>}/>
+      <Route exact path="/shopping_carts_reactjs_redux_hooks/" render={() => <Products/>}/>
+      <Route exact path="/shopping_carts_reactjs_redux_hooks/cart" render={() => <Carts/>}/>
     </div>
   );
 }

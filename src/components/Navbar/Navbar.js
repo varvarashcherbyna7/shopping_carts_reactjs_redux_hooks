@@ -18,10 +18,10 @@ const Navbar = ({carts}) => {
         <nav className="nav">
             <div className="navItem">
                 <div className="item">
-                    <NavLink to="/">Shopping Cart</NavLink>
+                    <NavLink to="/shopping_carts_reactjs_redux_hooks/">Shopping Cart</NavLink>
                 </div>
                 <div className="item">
-                    <div><NavLink to="/cart">Basket</NavLink></div>
+                    <div><NavLink to="/shopping_carts_reactjs_redux_hooks/cart">Basket</NavLink></div>
                     <div><i className="fas fa-shopping-basket"/></div>
                     <div>{cartCount}</div>
                 </div>
