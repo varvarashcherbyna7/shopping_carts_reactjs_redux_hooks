@@ -15,24 +15,15 @@ const Product = ({productData, addToCart}) => {
                     <div>new</div>
                 </div>
                 <div className="imgContainer">
-
-                        <TransformWrapper
-                            defaultScale={1}
-                            defaultPositionX={100}
-                            defaultPositionY={200}
-                        >
-                            <TransformComponent>
-                                <img src={productData.img}
-                                     alt={`image product${productData.id}`}
-                                     style={{width: "100%"}}
-                                />
-                            </TransformComponent>
-                        </TransformWrapper>
-
+                    <TransformWrapper defaultScale={1} defaultPositionX={100} defaultPositionY={200}>
+                        <TransformComponent>
+                            <img src={productData.img} alt={`image product${productData.id}`} style={{width: "100%"}}/>
+                        </TransformComponent>
+                    </TransformWrapper>
                 </div>
                 <div className="btnIcon">
                     <div>
-                        <NavLink to="/"><img src={libraIcon} alt="libraIcon"/></NavLink>
+                        <NavLink to="/shopping_carts_reactjs_redux_hooks/"><img src={libraIcon} alt="libraIcon"/></NavLink>
                     </div>
                 </div>
             </div>
@@ -42,10 +33,7 @@ const Product = ({productData, addToCart}) => {
             </div>
 
             <div className="priceColorContainer">
-
-                <div className="colorContainer"
-
-                >
+                <div className="colorContainer">
                     <div className="colorArrowContainer">
                         <h5>{productData.colorDefault}</h5>
                         <ul className="color">
@@ -64,15 +52,11 @@ const Product = ({productData, addToCart}) => {
                 </div>
                 <div className="price">{productData.price} грн</div>
             </div>
-
-            <div className="capacityContainer" >
+            <div className="capacityContainer">
                 {productData.capacities.map((capacity, index) => {
                     return (
                         <div className="checkboxContainer" key={index}>
-                            <input type="checkbox"
-                                   id={`checkbox${productData.id}-${index}`}
-                                   name={`checkbox${productData.id}-${index}`}
-                            />
+                            <input type="checkbox" id={`checkbox${productData.id}-${index}`} name={`checkbox${productData.id}-${index}`}/>
                             <label htmlFor={`checkbox${productData.id}-${index}`} className="checkbox">
                                 <span>{capacity} мл</span>
                             </label>
@@ -89,7 +73,8 @@ const Product = ({productData, addToCart}) => {
                 {/*</div>*/}
                 <div className="btnBuy" onClick={() => {
                     addToCart(productData.id)
-                }}>купить</div>
+                }}>купить
+                </div>
             </div>
         </div>
     )
