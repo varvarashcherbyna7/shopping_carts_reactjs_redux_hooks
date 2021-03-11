@@ -1,25 +1,22 @@
 {
   "files": {
-    "main.css": "/shopping_carts_reactjs_redux_hooks/static/css/main.ce5e2d8e.chunk.css",
-    "main.js": "/shopping_carts_reactjs_redux_hooks/static/js/main.38326cf6.chunk.js",
-    "main.js.map": "/shopping_carts_reactjs_redux_hooks/static/js/main.38326cf6.chunk.js.map",
-    "runtime-main.js": "/shopping_carts_reactjs_redux_hooks/static/js/runtime-main.e879faaa.js",
-    "runtime-main.js.map": "/shopping_carts_reactjs_redux_hooks/static/js/runtime-main.e879faaa.js.map",
-    "static/js/2.ed158f52.chunk.js": "/shopping_carts_reactjs_redux_hooks/static/js/2.ed158f52.chunk.js",
-    "static/js/2.ed158f52.chunk.js.map": "/shopping_carts_reactjs_redux_hooks/static/js/2.ed158f52.chunk.js.map",
-    "static/js/3.af6ae7d1.chunk.js": "/shopping_carts_reactjs_redux_hooks/static/js/3.af6ae7d1.chunk.js",
-    "static/js/3.af6ae7d1.chunk.js.map": "/shopping_carts_reactjs_redux_hooks/static/js/3.af6ae7d1.chunk.js.map",
-    "index.html": "/shopping_carts_reactjs_redux_hooks/index.html",
-    "static/css/main.ce5e2d8e.chunk.css.map": "/shopping_carts_reactjs_redux_hooks/static/css/main.ce5e2d8e.chunk.css.map",
-    "static/js/2.ed158f52.chunk.js.LICENSE.txt": "/shopping_carts_reactjs_redux_hooks/static/js/2.ed158f52.chunk.js.LICENSE.txt",
-    "static/media/image1.80e428b6.png": "/shopping_carts_reactjs_redux_hooks/static/media/image1.80e428b6.png",
-    "static/media/image2.9a0ecdb2.png": "/shopping_carts_reactjs_redux_hooks/static/media/image2.9a0ecdb2.png",
-    "static/media/image3.fc60fb7d.png": "/shopping_carts_reactjs_redux_hooks/static/media/image3.fc60fb7d.png"
+    "main.css": "/venbest_test/static/css/main.5bee796c.chunk.css",
+    "main.js": "/venbest_test/static/js/main.183004b0.chunk.js",
+    "main.js.map": "/venbest_test/static/js/main.183004b0.chunk.js.map",
+    "runtime-main.js": "/venbest_test/static/js/runtime-main.9d932e09.js",
+    "runtime-main.js.map": "/venbest_test/static/js/runtime-main.9d932e09.js.map",
+    "static/js/2.13e941af.chunk.js": "/venbest_test/static/js/2.13e941af.chunk.js",
+    "static/js/2.13e941af.chunk.js.map": "/venbest_test/static/js/2.13e941af.chunk.js.map",
+    "static/js/3.89a93ae8.chunk.js": "/venbest_test/static/js/3.89a93ae8.chunk.js",
+    "static/js/3.89a93ae8.chunk.js.map": "/venbest_test/static/js/3.89a93ae8.chunk.js.map",
+    "index.html": "/venbest_test/index.html",
+    "static/css/main.5bee796c.chunk.css.map": "/venbest_test/static/css/main.5bee796c.chunk.css.map",
+    "static/js/2.13e941af.chunk.js.LICENSE.txt": "/venbest_test/static/js/2.13e941af.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e879faaa.js",
-    "static/js/2.ed158f52.chunk.js",
-    "static/css/main.ce5e2d8e.chunk.css",
-    "static/js/main.38326cf6.chunk.js"
+    "static/js/runtime-main.9d932e09.js",
+    "static/js/2.13e941af.chunk.js",
+    "static/css/main.5bee796c.chunk.css",
+    "static/js/main.183004b0.chunk.js"
   ]
 }
